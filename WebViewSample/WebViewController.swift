@@ -27,21 +27,5 @@ class WebViewController: NSViewController {
             webView.load(request)
         }
     }
-
-    override func viewWillAppear() {
-        super.viewWillAppear()
-    }
-
-    override func viewDidAppear() {
-        super.viewDidAppear()
-    }
-
-    override func viewWillDisappear() {
-        super.viewWillDisappear()
-    }
-
-    override func viewDidDisappear() {
-        super.viewDidDisappear()
-    }
     
 }
