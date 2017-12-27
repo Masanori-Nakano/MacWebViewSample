@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="13529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WebViewController" customModule="WebViewSample" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="c22-O7-iKe" id="N9b-gh-q02"/>
+                <outlet property="webView" destination="CTf-Va-1PT" id="QOQ-0T-Xay"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CTf-Va-1PT">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CTf-Va-1PT" secondAttribute="trailing" id="Mt9-bp-y5Q"/>
+                <constraint firstAttribute="bottom" secondItem="CTf-Va-1PT" secondAttribute="bottom" id="fSx-N1-OCF"/>
+                <constraint firstItem="CTf-Va-1PT" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="gkB-Nc-63x"/>
+                <constraint firstItem="CTf-Va-1PT" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="mhb-5i-6X7"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>
