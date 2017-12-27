@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import WebKit
 
 class MainWindowController: NSWindowController {
     
@@ -17,21 +16,10 @@ class MainWindowController: NSWindowController {
         return NSNib.Name(rawValue: "MainWindowController")
     }
 
-    // LifeCycle 1
     override func windowWillLoad() {
         super.windowWillLoad()
         
         self.contentViewController = WebViewController()
-    }
-
-    // LifeCycle 2 viewが生成される
-    override func loadWindow() {
-        super.loadWindow()
-    }
-    
-    // LifeCycle 3
-    override func windowDidLoad() {
-        super.windowDidLoad()
     }
 
 }
